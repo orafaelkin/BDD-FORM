@@ -1,0 +1,1 @@
+Esta automação tem por objetivo preencher formulários de forma automática, com opção de envio de e-mail no final.
