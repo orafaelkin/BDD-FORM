@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on darwin)" generated="20240110 12:24:46.195" rpa="false" schemaversion="4">
+<suite id="s1" name="Quote" source="/Users/rafaeloliveira/Desktop/BDD-FORM/Tests/Quote/Quote.robot">
+<test id="s1-t1" name="cenario 1: Cadastro aba Enter Vehicle Data" line="14">
+<kw name="Dado que eu acesso o site do Engine" library="Vehicle_steps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240110 12:24:46.783" level="INFO">Opening browser 'chrome' to base url 'http://sampleapp.tricentis.com/101/app.php'.</msg>
+<status status="PASS" starttime="20240110 12:24:46.782" endtime="20240110 12:24:53.984"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240110 12:24:53.985" endtime="20240110 12:24:54.478"/>
+</kw>
+<status status="PASS" starttime="20240110 12:24:46.782" endtime="20240110 12:24:54.478"/>
+</kw>
+<kw name="Quando cadastro a aba Enter Vehicle Data" library="Vehicle_steps">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Vehicle.Camper}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:54.481" level="INFO">Clicking element '//*[@id="nav_camper"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:54.479" endtime="20240110 12:24:55.062"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Vehicle.Option_BMW}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:55.064" level="INFO">Clicking element 'xpath=//option [contains(text(),"BMW")]'.</msg>
+<status status="PASS" starttime="20240110 12:24:55.063" endtime="20240110 12:24:55.123"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Vehicle.Input_KW}</arg>
+<arg>${KW}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:55.125" level="INFO">Typing text '1200' into text field '//input [@id="engineperformance"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:55.124" endtime="20240110 12:24:55.500"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Vehicle.Input_DOM}</arg>
+<arg>${Data}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:55.501" level="INFO">Typing text '12/09/1989' into text field '//input[@placeholder="MM/DD/YYYY"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:55.500" endtime="20240110 12:24:55.728"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Vehicle.Input_Seats}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:55.730" level="INFO">Clicking element ' xpath=//select [@id="numberofseats"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:55.728" endtime="20240110 12:24:55.914"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Vehicle.Input_Number_Seats}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:55.915" level="INFO">Clicking element ' xpath=//select [@id="numberofseats"]/option[9]'.</msg>
+<status status="PASS" starttime="20240110 12:24:55.914" endtime="20240110 12:24:56.248"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Vehicle.Input_RHD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:56.250" level="INFO">Clicking element 'class=ideal-radio'.</msg>
+<status status="PASS" starttime="20240110 12:24:56.249" endtime="20240110 12:24:56.544"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Vehicle.Fuel}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:56.545" level="INFO">Clicking element 'xpath=//*[@id="fuel"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:56.544" endtime="20240110 12:24:56.619"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Vehicle.Fuel_option}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:56.620" level="INFO">Clicking element '//*[@id="fuel"]/option[5]'.</msg>
+<status status="PASS" starttime="20240110 12:24:56.619" endtime="20240110 12:24:56.933"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Vehicle.Payload}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:56.934" level="INFO">Clicking element '//*[@id="payload"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:56.933" endtime="20240110 12:24:57.277"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Vehicle.Input_Payload}</arg>
+<arg>101</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:57.279" level="INFO">Typing text '101' into text field '//*[@id="payload"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:57.277" endtime="20240110 12:24:57.383"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Vehicle.Totalweight}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:57.385" level="INFO">Clicking element '//*[@id="totalweight"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:57.383" endtime="20240110 12:24:57.485"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Vehicle.Input_TotalWeight}</arg>
+<arg>1010</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:57.486" level="INFO">Typing text '1010' into text field '//*[@id="totalweight"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:57.485" endtime="20240110 12:24:57.608"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Vehicle.ListPrice}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:57.610" level="INFO">Clicking element '//*[@id="listprice"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:57.609" endtime="20240110 12:24:57.678"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Vehicle.Input_ListPrice}</arg>
+<arg>100000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:57.680" level="INFO">Typing text '100000' into text field '//*[@id="listprice"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:57.678" endtime="20240110 12:24:57.812"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Vehicle.LicencePlate}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:57.813" level="INFO">Clicking element '//*[@id="licenseplatenumber"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:57.812" endtime="20240110 12:24:57.885"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Vehicle.Input_LicencePlate}</arg>
+<arg>101010</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:57.886" level="INFO">Typing text '101010' into text field '//*[@id="licenseplatenumber"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:57.885" endtime="20240110 12:24:57.990"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Vehicle.Annual_Mileage}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:57.991" level="INFO">Clicking element '//*[@id="annualmileage"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:57.990" endtime="20240110 12:24:58.065"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Vehicle.Annual_Mileage}</arg>
+<arg>1010</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:58.067" level="INFO">Typing text '1010' into text field '//*[@id="annualmileage"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:58.065" endtime="20240110 12:24:58.187"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240110 12:24:58.585" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240110 12:24:58.187" endtime="20240110 12:24:58.585"/>
+</kw>
+<status status="PASS" starttime="20240110 12:24:54.479" endtime="20240110 12:24:58.586"/>
+</kw>
+<kw name="E clico no botão Next" library="Vehicle_steps">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Vehicle.Next}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:58.588" level="INFO">Clicking button 'xpath=//*[@id="nextenterinsurantdata"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:58.586" endtime="20240110 12:24:58.765"/>
+</kw>
+<status status="PASS" starttime="20240110 12:24:58.586" endtime="20240110 12:24:58.765"/>
+</kw>
+<kw name="Então acesso a aba Enter Insurant Data" library="Vehicle_steps">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${Vehicle.Enter_InsurantData}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240110 12:24:58.819" level="INFO">Element '//*[@id="firstname"]' is displayed.</msg>
+<status status="PASS" starttime="20240110 12:24:58.766" endtime="20240110 12:24:58.819"/>
+</kw>
+<status status="PASS" starttime="20240110 12:24:58.765" endtime="20240110 12:24:58.819"/>
+</kw>
+<status status="PASS" starttime="20240110 12:24:46.781" endtime="20240110 12:24:58.819"/>
+</test>
+<test id="s1-t2" name="cenario 2: Cadastro Pagina Enter Insurant Data" line="20">
+<kw name="Dado que eu acesso a aba Enter Insurant Data" library="Insurant_steps">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Insurant.Enter_InsurantData}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240110 12:24:58.821" endtime="20240110 12:24:58.859"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240110 12:24:58.859" endtime="20240110 12:24:58.863"/>
+</kw>
+<status status="PASS" starttime="20240110 12:24:58.821" endtime="20240110 12:24:58.863"/>
+</kw>
+<kw name="Quando cadastro a aba Enter Insurant Data" library="Insurant_steps">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Insurant.FirstName}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:58.865" level="INFO">Clicking element '//*[@id="firstname"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:58.863" endtime="20240110 12:24:59.009"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Insurant.Input_FirstName}</arg>
+<arg>Caio</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:59.010" level="INFO">Typing text 'Caio' into text field '//*[@id="firstname"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:59.009" endtime="20240110 12:24:59.115"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Insurant.Last_Name}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:59.117" level="INFO">Clicking element '//*[@id="lastname"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:59.115" endtime="20240110 12:24:59.205"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Insurant.Input_LastName}</arg>
+<arg>Silva</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:59.207" level="INFO">Typing text 'Silva' into text field '//*[@id="lastname"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:59.205" endtime="20240110 12:24:59.366"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Insurant.Input_BirthDate}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:59.367" level="INFO">Clicking element '//*[@id="birthdate"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:59.366" endtime="20240110 12:24:59.446"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Insurant.Input_BirthDate}</arg>
+<arg>12/09/1989</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:59.448" level="INFO">Typing text '12/09/1989' into text field '//*[@id="birthdate"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:59.446" endtime="20240110 12:24:59.637"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Insurant.Input_Gender}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240110 12:24:59.637" endtime="20240110 12:24:59.668"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${Insurant.Input_Gender}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240110 12:24:59.689" level="INFO">Element '//*[@id="insurance-form"]/div/section[2]/div[4]/p/label[1]/span' is displayed.</msg>
+<status status="PASS" starttime="20240110 12:24:59.668" endtime="20240110 12:24:59.689"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Insurant.Input_Gender}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:59.690" level="INFO">Clicking element '//*[@id="insurance-form"]/div/section[2]/div[4]/p/label[1]/span'.</msg>
+<status status="PASS" starttime="20240110 12:24:59.689" endtime="20240110 12:24:59.779"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Insurant.Street_Address}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:59.781" level="INFO">Clicking element '//*[@id="streetaddress"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:59.779" endtime="20240110 12:24:59.883"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Insurant.Input_Address}</arg>
+<arg>Gaetano Gioja, 14</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:24:59.884" level="INFO">Typing text 'Gaetano Gioja, 14' into text field '//*[@id="streetaddress"]'.</msg>
+<status status="PASS" starttime="20240110 12:24:59.883" endtime="20240110 12:25:00.111"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Insurant.Input_Country}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:00.113" level="INFO">Clicking element 'xpath=//option [contains(text(),"Brazil")]'.</msg>
+<status status="PASS" starttime="20240110 12:25:00.111" endtime="20240110 12:25:00.213"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Insurant.Zip_Code}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:00.215" level="INFO">Clicking element '//*[@id="zipcode"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:00.213" endtime="20240110 12:25:00.342"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Insurant.Input_ZipCode}</arg>
+<arg>05183180</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:00.344" level="INFO">Typing text '05183180' into text field '//*[@id="zipcode"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:00.342" endtime="20240110 12:25:00.474"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Insurant.City}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:00.477" level="INFO">Clicking element '//*[@id="city"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:00.475" endtime="20240110 12:25:00.549"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Insurant.Input_City}</arg>
+<arg>São Paulo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:00.550" level="INFO">Typing text 'São Paulo' into text field '//*[@id="city"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:00.549" endtime="20240110 12:25:00.656"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Insurant.Input_Occupation}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:00.657" level="INFO">Clicking element 'xpath=//option [contains(text(),"Public Official")]'.</msg>
+<status status="PASS" starttime="20240110 12:25:00.656" endtime="20240110 12:25:00.766"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240110 12:25:05.767" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240110 12:25:00.766" endtime="20240110 12:25:05.767"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240110 12:25:06.146" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240110 12:25:05.767" endtime="20240110 12:25:06.147"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Insurant.Input_hobbies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:06.148" level="INFO">Clicking element '//*[@id="insurance-form"]/div/section[2]/div[10]/p/label[1]/span'.</msg>
+<status status="PASS" starttime="20240110 12:25:06.147" endtime="20240110 12:25:06.206"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Insurant.Website}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:06.209" level="INFO">Clicking element '//*[@id="website"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:06.206" endtime="20240110 12:25:06.335"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Insurant.Input_WebSite}</arg>
+<arg>www.google.com.Brazil</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:06.336" level="INFO">Typing text 'www.google.com.Brazil' into text field '//*[@id="website"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:06.335" endtime="20240110 12:25:06.627"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>${Insurant.Load_Picture}</arg>
+<arg>C:\P10</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20240110 12:25:06.636" level="INFO">Sending /Users/rafaeloliveira/Desktop/BDD-FORM/Tests/Quote/C:P10 to browser.</msg>
+<status status="PASS" starttime="20240110 12:25:06.628" endtime="20240110 12:25:06.726"/>
+</kw>
+<status status="PASS" starttime="20240110 12:24:58.863" endtime="20240110 12:25:06.726"/>
+</kw>
+<kw name="E clico no botão Next Product" library="Insurant_steps">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Insurant.Next_ProductData}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:06.728" level="INFO">Clicking button 'xpath=//*[@id="nextenterproductdata"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:06.727" endtime="20240110 12:25:06.911"/>
+</kw>
+<status status="PASS" starttime="20240110 12:25:06.726" endtime="20240110 12:25:06.911"/>
+</kw>
+<kw name="Então acesso a aba Enter Product Data" library="Insurant_steps">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${Insurant.Enter_ProductData}</arg>
+<arg>timeout=10s</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240110 12:25:06.947" level="INFO">Element '//*[@id="startdate"]' is displayed.</msg>
+<status status="PASS" starttime="20240110 12:25:06.912" endtime="20240110 12:25:06.948"/>
+</kw>
+<status status="PASS" starttime="20240110 12:25:06.911" endtime="20240110 12:25:06.948"/>
+</kw>
+<status status="PASS" starttime="20240110 12:24:58.820" endtime="20240110 12:25:06.948"/>
+</test>
+<test id="s1-t3" name="cenario 3: Cadastro Enter Product Data" line="27">
+<kw name="Dado que eu acesso a aba Enter Product Data" library="Products_steps">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Products.Enter_ProductData}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240110 12:25:06.949" endtime="20240110 12:25:06.978"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240110 12:25:06.978" endtime="20240110 12:25:06.981"/>
+</kw>
+<status status="PASS" starttime="20240110 12:25:06.949" endtime="20240110 12:25:06.981"/>
+</kw>
+<kw name="Quando cadastro a aba Enter Product Data" library="Products_steps">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Products.Start_Date}</arg>
+<arg>05/10/2024</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:06.982" level="INFO">Typing text '05/10/2024' into text field 'xpath=//*[@id="startdate"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:06.982" endtime="20240110 12:25:07.245"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Products.Insurance_Sum}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:07.247" level="INFO">Clicking element 'xpath=//option [contains(text(),"3.000.000,00")]'.</msg>
+<status status="PASS" starttime="20240110 12:25:07.245" endtime="20240110 12:25:07.345"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Products.Damage_Insurance}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:07.346" level="INFO">Clicking element 'xpath=//option [contains(text(),"No Coverage")]'.</msg>
+<status status="PASS" starttime="20240110 12:25:07.345" endtime="20240110 12:25:07.412"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Products.optional_products}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240110 12:25:07.413" endtime="20240110 12:25:07.485"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Products.optional_products}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:07.486" level="INFO">Clicking element '//*[@id="insurance-form"]/div/section[3]/div[4]/p/label[1]/span'.</msg>
+<status status="PASS" starttime="20240110 12:25:07.485" endtime="20240110 12:25:07.595"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240110 12:25:08.040" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240110 12:25:07.595" endtime="20240110 12:25:08.040"/>
+</kw>
+<status status="PASS" starttime="20240110 12:25:06.981" endtime="20240110 12:25:08.040"/>
+</kw>
+<kw name="E clico no botão Next Price Option" library="Products_steps">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Products.Next_Price_Option}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:08.042" level="INFO">Clicking button 'xpath=//*[@id="nextselectpriceoption"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:08.041" endtime="20240110 12:25:08.144"/>
+</kw>
+<status status="PASS" starttime="20240110 12:25:08.041" endtime="20240110 12:25:08.144"/>
+</kw>
+<kw name="Então acesso a aba Select Price Option" library="Products_steps">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Products.choose_gold}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240110 12:25:08.145" endtime="20240110 12:25:08.176"/>
+</kw>
+<status status="PASS" starttime="20240110 12:25:08.145" endtime="20240110 12:25:08.178"/>
+</kw>
+<status status="PASS" starttime="20240110 12:25:06.948" endtime="20240110 12:25:08.179"/>
+</test>
+<test id="s1-t4" name="cenario 4: Select Price Option" line="35">
+<kw name="Dado que eu acesso a aba Select Price Option" library="Price_steps">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Price.choose_gold}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240110 12:25:08.180" endtime="20240110 12:25:08.203"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240110 12:25:08.203" endtime="20240110 12:25:08.206"/>
+</kw>
+<status status="PASS" starttime="20240110 12:25:08.179" endtime="20240110 12:25:08.206"/>
+</kw>
+<kw name="Quando eu escolho o Price Option" library="Price_steps">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Price.choose_gold}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:08.208" level="INFO">Clicking element 'xpath=//*[@id="priceTable"]/tfoot/tr/th[2]/label[2]/span'.</msg>
+<status status="PASS" starttime="20240110 12:25:08.207" endtime="20240110 12:25:08.331"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240110 12:25:08.919" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240110 12:25:08.331" endtime="20240110 12:25:08.919"/>
+</kw>
+<status status="PASS" starttime="20240110 12:25:08.206" endtime="20240110 12:25:08.919"/>
+</kw>
+<kw name="E clico no botão next send Quote" library="Price_steps">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Price.Next_sendQuote}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240110 12:25:08.919" endtime="20240110 12:25:08.951"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Price.Next_sendQuote}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:08.952" level="INFO">Clicking element 'xpath=//*[@id="nextsendquote"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:08.951" endtime="20240110 12:25:09.019"/>
+</kw>
+<status status="PASS" starttime="20240110 12:25:08.919" endtime="20240110 12:25:09.019"/>
+</kw>
+<kw name="Então acesso a aba Send Quote" library="Price_steps">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Price.email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240110 12:25:09.020" endtime="20240110 12:25:09.055"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240110 12:25:09.485" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240110 12:25:09.056" endtime="20240110 12:25:09.486"/>
+</kw>
+<status status="PASS" starttime="20240110 12:25:09.019" endtime="20240110 12:25:09.486"/>
+</kw>
+<status status="PASS" starttime="20240110 12:25:08.179" endtime="20240110 12:25:09.486"/>
+</test>
+<test id="s1-t5" name="cenario 5: Send Quote" line="41">
+<kw name="Dado que eu acesso a aba a Send Quote" library="Quote_steps">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Quote.Input_Email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240110 12:25:09.487" endtime="20240110 12:25:09.511"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240110 12:25:09.511" endtime="20240110 12:25:09.515"/>
+</kw>
+<status status="PASS" starttime="20240110 12:25:09.487" endtime="20240110 12:25:09.515"/>
+</kw>
+<kw name="Quando eu Cadastro meus Dados de Contato" library="Quote_steps">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Quote.Input_Email}</arg>
+<arg>caiovfsilva@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:09.517" level="INFO">Typing text 'caiovfsilva@gmail.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:09.516" endtime="20240110 12:25:09.853"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Quote.Input_Phone}</arg>
+<arg>1195444566</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:09.854" level="INFO">Typing text '1195444566' into text field '//*[@id="phone"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:09.853" endtime="20240110 12:25:10.148"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Quote.Input_UserName}</arg>
+<arg>CACA01</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:10.150" level="INFO">Typing text 'CACA01' into text field '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:10.149" endtime="20240110 12:25:10.302"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Quote.Input_Password}</arg>
+<arg>138527Ca#</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:10.304" level="INFO">Typing text '138527Ca#' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:10.302" endtime="20240110 12:25:10.535"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Quote.Input_ConfirmPassword}</arg>
+<arg>138527Ca#</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:10.536" level="INFO">Typing text '138527Ca#' into text field '//*[@id="confirmpassword"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:10.535" endtime="20240110 12:25:10.833"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Quote.Send}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240110 12:25:10.834" endtime="20240110 12:25:10.906"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Quote.Send}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:10.908" level="INFO">Clicking element '//*[@id="sendemail"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:10.906" endtime="20240110 12:25:11.055"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240110 12:25:11.499" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240110 12:25:11.056" endtime="20240110 12:25:11.499"/>
+</kw>
+<status status="PASS" starttime="20240110 12:25:09.515" endtime="20240110 12:25:11.499"/>
+</kw>
+<kw name="E clico no botão Send" library="Quote_steps">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Quote.Send_Success}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240110 12:25:11.500" endtime="20240110 12:25:11.555"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Quote.Send_Success}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:11.556" level="INFO">Clicking element '//*[@id="LoadingPDF"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:11.555" endtime="20240110 12:25:11.619"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240110 12:25:16.620" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240110 12:25:11.619" endtime="20240110 12:25:16.620"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240110 12:25:17.127" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240110 12:25:16.621" endtime="20240110 12:25:17.127"/>
+</kw>
+<status status="PASS" starttime="20240110 12:25:11.499" endtime="20240110 12:25:17.127"/>
+</kw>
+<kw name="Então o e-mail é enviado com sucesso" library="Quote_steps">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Quote.Confirm}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240110 12:25:17.128" endtime="20240110 12:25:19.580"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240110 12:25:20.026" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240110 12:25:19.582" endtime="20240110 12:25:20.026"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Quote.Confirm}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240110 12:25:20.028" level="INFO">Clicking element 'xpath=//*[@class="confirm"]'.</msg>
+<status status="PASS" starttime="20240110 12:25:20.027" endtime="20240110 12:25:20.087"/>
+</kw>
+<status status="PASS" starttime="20240110 12:25:17.127" endtime="20240110 12:25:20.087"/>
+</kw>
+<status status="PASS" starttime="20240110 12:25:09.486" endtime="20240110 12:25:20.088"/>
+</test>
+<status status="PASS" starttime="20240110 12:24:46.212" endtime="20240110 12:25:20.089"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Quote">Quote</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
