@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+
+    // blocos de execucao
+    stages {
+        stage ('Preenchimento automatico') {
+            steps {
+                echo 'TESTE'
+            }
+        }
+
+    }
+}
