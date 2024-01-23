@@ -8,6 +8,15 @@ pipeline {
                 robot 'Tests/Quote/Quote.robot'
             }
         }
-    }
+        stage('Publish Results') {
+            steps {
+                script {
+                    // Publicar relatórios do Robot Framework no Jenkins
+                    robot publish --output results/output.xml --reportdir results --logtitle 'Test Execution Report'
+                }   
+                   
+            }
+        }
     
+    }
 }
