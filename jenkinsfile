@@ -3,9 +3,17 @@ pipeline {
 
     // blocos de execucao
     stages {
-        stage ('Preenchimento automatico') {
+        stage ('Checkout') {
             steps {
-                echo 'TESTE'
+                git 'https://github.com/orafaelkin/BDD-FORM.git'
+            }
+        }
+
+    }
+    stages{
+        stage ('Run Test'){
+            steps{
+                sh 'robot  Tests/Quote/Quote.robot'
             }
         }
 
