@@ -8,14 +8,12 @@ pipeline {
                 git 'https://github.com/orafaelkin/BDD-FORM.git'
             }
         }
-
-    }
-    stages{
+      }
         stage ('Run Test'){
             steps{
                 sh 'robot  Tests/Quote/Quote.robot'
             }
         }
 
-    }
+    
 }
